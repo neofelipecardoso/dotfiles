@@ -22,7 +22,7 @@ button {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
   background: inherit;
-  box-shadow: inset 0 -3px #ebdbb2;
+  box-shadow: inset 0 -3px #53C9C3;
 }
 
 /* you can set a style on hover for any module like this */
@@ -52,7 +52,7 @@ button:hover {
 }
 
 #workspaces button.urgent {
-  background-color: #eb4d4b;
+  background-color: #D4F8FF;
 }
 
 #mode {
