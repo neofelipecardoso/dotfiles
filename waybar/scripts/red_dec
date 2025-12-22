@@ -2,7 +2,7 @@
 
 # Tenta adquirir o lock; se não conseguir, sai imediatamente
 # Source the sunvar.sh script to get the variable
-source ./sunvar.sh
+source ~/.config/waybar/scripts/sunvar.sh
 
 # Check if the variable is set. If not, set it to 0
 if [ -z "$VAR" ]; then
@@ -13,7 +13,7 @@ fi
 VAR=$((VAR + 200))
 
 # Update the variable in sunvar.sh
-echo "VAR=$VAR" >./sunvar.sh
+echo "VAR=$VAR" >~/.config/waybar/scripts/sunvar.sh
 
 # Print the new value of VAR
 echo "New value of VAR: $VAR"

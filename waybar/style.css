@@ -52,7 +52,7 @@ button:hover {
 }
 
 #workspaces button.urgent {
-  background-color: #D4F8FF;
+  background-color: #DAF8FF;
 }
 
 #mode {
@@ -105,12 +105,14 @@ button:hover {
 #custom-notification {
   color: #FFF;
 }
-#custom-exit{
+
+#custom-exit {
   color: #FFF;
   margin-left: 10px;
   margin-right: 10px;
 }
-#group-things{
+
+#group-things {
   color: #FFF;
 }
 
@@ -120,7 +122,7 @@ button:hover {
 
 
 .modules-right,
-.modules-left{
+.modules-left {
   background-color: #9D9DFF;
   border-radius: 10px;
   margin: 5px;
