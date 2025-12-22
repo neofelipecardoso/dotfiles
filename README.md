@@ -26,7 +26,7 @@ A collection of my **Linux dotfiles**, focused on a **clean pastel aesthetic**, 
 Clone the repository:
 
 ```bash
-git clone git@github.com:neofelipecardoso/dotfiles.git
+git clone https://github.com/neofelipecardoso/dotfiles.git
 cd dotfiles
 ```
 
