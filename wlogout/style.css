@@ -1,70 +1,78 @@
 * {
   font-family: FiraCode Nerd Font Mono;
   font-size: 16px;
-  color: #ebdbb2;
+  color: #644F64;
 }
+
 window {
-    background-color: rgba(40, 40, 40, 0.2); /* base com transparência */
+  background-color: rgba(83, 201, 195, 0.1);
+  /* base com transparência */
 }
 
 button {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 20%;
-    background-color: #282828;
-    animation: gradient_f 20s ease-in infinite;
-    transition: all 0.3s ease-in;
-    box-shadow: 0 0 10px 2px transparent;
-    border-radius: 36px;
-    margin: 10px;
-    color: transparent;
-    border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20%;
+  background-color: #FFE1EA;
+  animation: gradient_f 20s ease-in infinite;
+  transition: all 0.3s ease-in;
+  box-shadow: 0 0 10px 2px transparent;
+  border-radius: 36px;
+  margin: 10px;
+  color: transparent;
+  border: none;
 }
 
 button:focus {
-    box-shadow: none;
-    background-size: 20%;
+  box-shadow: none;
+  background-size: 20%;
 }
 
 button:hover {
-    background-size: 50%;
-    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.4);
-    background-color: #427b58; /* blue */
-    color: transparent;
-    transition: all 0.3s cubic-bezier(0.55, 0.0, 0.28, 1.682), box-shadow 0.5s ease-in;
+  background-size: 50%;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.4);
+  background-color: #9D9DFF;
+  color: transparent;
+  transition: all 0.3s cubic-bezier(0.55, 0.0, 0.28, 1.682),
+    box-shadow 0.5s ease-in;
 }
 
 #shutdown {
-    background-image: image(url("./icons/power.png"));
+  background-image: image(url("./icons/power-hover.png"));
 }
+
 #shutdown:hover {
-    background-image: image(url("./icons/power-hover.png"));
+  background-image: image(url("./icons/power.png"));
 }
 
 #logout {
-    background-image: image(url("./icons/logout.png"));
+  background-image: image(url("./icons/logout-hover.png"));
 }
+
 #logout:hover {
-    background-image: image(url("./icons/logout-hover.png"));
+  background-image: image(url("./icons/logout.png"));
 }
 
 #reboot {
-    background-image: image(url("./icons/restart.png"));
+  background-image: image(url("./icons/restart-hover.png"));
 }
+
 #reboot:hover {
-    background-image: image(url("./icons/restart-hover.png"));
+  background-image: image(url("./icons/restart.png"));
 }
 
 #lock {
-    background-image: image(url("./icons/lock.png"));
+  background-image: image(url("./icons/lock-hover.png"));
 }
+
 #lock:hover {
-    background-image: image(url("./icons/lock-hover.png"));
+  background-image: image(url("./icons/lock.png"));
 }
 
 #hibernate {
-    background-image: image(url("./icons/hibernate.png"));
+  background-image: image(url("./icons/hibernate-hover.png"));
 }
+
 #hibernate:hover {
-    background-image: image(url("./icons/hibernate-hover.png"));
+  background-image: image(url("./icons/hibernate.png"));
 }
