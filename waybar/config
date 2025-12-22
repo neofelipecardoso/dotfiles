@@ -1,0 +1,154 @@
+{
+  "position": "bottom",
+  "margin-bottom": 5,
+  "margin-left": 10,
+  "margin-right": 10,
+  "height": 35,
+  "modules-left": [
+    "hyprland/workspaces",
+    "hyprland/window"
+  ],
+  "modules-center": [
+      "clock"
+  ],
+  "modules-right": [
+    "pulseaudio",
+    "group/things",
+    "custom/wlsunset",
+    "custom/notification",
+    "custom/exit"
+  ],
+  "modules-veryright": [
+    "custom/exit"
+  ],
+  "hyprland/window": {
+    "format": "{}",
+    "max-length": 35,
+    "rewrite": {
+      "": "Harsh"
+    },
+    "separate-outputs": true
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "format-icons": {
+      "1": " ",
+      "2": " ",
+      "3": " ",
+      "4": " ",
+      "5": " ",
+      "6": " ",
+      "7": " ",
+      "8": " ",
+      "9": " ",
+      "10": " ",
+      "active": " "
+    },
+    "sort-by-number": true,
+    "persistent-workspaces": {
+      "*": 4, // 5 workspaces by default on every monitor
+      "HDMI-A-1": 3 // but only three on HDMI-A-1
+    }
+  },
+  "clock": {
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": "{:%Y-%m-%d}"
+  },
+  "cpu": {
+    "format": "  {usage}%",
+    "tooltip": false
+  },
+  "memory": {
+    "format": "{}%  "
+  },
+  "temperature": {
+    "critical-threshold": 80,
+    "format": "{icon} {temperatureC}°C",
+    "format-icons": [
+      "",
+      "",
+      ""
+    ]
+  },
+  "custom/exit":{
+    "format": "",
+    "on-click": "wlogout -b 5"
+  },
+  "custom/wlsunset": {
+    "format": "󰈋",
+    "on-click": "bash ~/.config/waybar/scripts/sunONOFF",
+    "on-scroll-up": "bash ~/.config/waybar/scripts/red_inc",
+    "on-scroll-down": "bash ~/.config/waybar/scripts/red_dec",
+    "tooltip-format": " - inc temp  - dec temp"
+  },
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon}  {capacity}%",
+    "format-full": "{icon}  {capacity}%",
+    "format-charging": "  {capacity}%",
+    "format-plugged": "  {capacity}%",
+    "format-alt": "{time} {icon}",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "group/things": {
+    "orientation": "horizontal",
+    "drawer": {
+      "transition-duration": 500,
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "temperature",
+      "tray"
+    ]
+  },
+  "tray": {
+    "icon_size": 16,
+    "spacing": 10
+  },
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "<span foreground='red'><sup></sup></span>",
+      "none": "",
+      "dnd-notification": "<span foreground='red'><sup></sup></span>",
+      "dnd-none": ""
+    },
+    "return-type": "json",
+    // "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
+  "pulseaudio": {
+    "format": "{icon}  {volume}%",
+    "format-bluetooth": "{volume}% {icon} {format_source}",
+    "format-bluetooth-muted": " {icon} {format_source}",
+    "format-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "on-click": "pavucontrol"
+  }
+}
