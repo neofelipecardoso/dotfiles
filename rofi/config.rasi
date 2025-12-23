@@ -1,19 +1,14 @@
 configuration {
     modes: "window,run,ssh,drun";
     sorting-method: "normal";
-    show-icons:true;
+    show-icons: true;
     matching: "regex";
-    drun-match-fields: "name";
-    display-run: "Menu:";
-    display-ssh: "SSH:";
-    display-drun: "Apps:";
-    display-window: "Windows:";
 }
 
 @theme "theme"
 
 * {
-    font: "Iosevka Nerd Font 12";
+    font: "JetBrainsMono Nerd Font 10";
 
     background-color:   transparent;
     text-color:         @fg0;
@@ -44,16 +39,7 @@ inputbar {
 
     padding:    8px 16px;
     spacing:    8px;
-    children:   [ prompt, entry ];
-}
-
-prompt {
-    text-color: @blue;
-}
-
-entry {
-    placeholder:        "Search";
-    placeholder-color:  @cyan;
+    children:   [ entry ];
 }
 
 message {
@@ -72,7 +58,7 @@ listview {
     background-color:   transparent;
     margin:     12px 0 0;
     columns:    1;
-    lines:      2;
+    lines:      5;
 
     fixed-height: false;
 }
